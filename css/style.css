@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+html {
+    font-family: 'Mukta', sans-serif;
+}
+
+a {
+    color: #0066CC;
+}
+
+body {
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul, ol {
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+#wide-site-container {
+    padding: 0 20px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+#thin-site-container {
+    max-width: 700px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+#site-title {
+    margin: 0;
+    margin-left: 75px;
+}
+
+#external-links {
+    text-align: center;
+    margin: 0px;
+}
+
+.external-link {
+    margin: 0 10px;
+}
+
+#columns:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.skills-columns {
+    margin-top: 30px;
+}
+
+.column3 {
+    width: 33%;
+    float: left;
+}
+
+.item {
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 25px;
+}
+
+.center-inline {
+    text-align: center
+}
+
+.center {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.right-border, .lr-border {
+    border-right: 1px solid black;
+}
+
+.left-border, .lr-border {
+    border-left: 1px solid black;
+}
+
+.column-header {
+    font-size: large;
+    margin: 0;
+}
+
+.toc-category {
+    /* display: inline-block; */
+    /* margin: 0 20px; */
+    width: fit-content;
+}
+
+.project {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.project-body {
+    margin: 20px;
+    padding: 0;
+}
+
+.project-description {
+    font-size: medium;
+    font-weight: normal;
+}
+
+.project-images {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.project-image {
+    display: inline-block;
+    height: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    cursor: zoom-in;
+}
+
+.project-image.tall {
+    height: 500px;
+}
+
+.project-link {
+    margin-right: 10px;
+}
+
+#project-list {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#gallery-container {
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+/* Background gallery of images */
+#gallery {
+    width: fit-content;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.gallery-image {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 0;
+    object-fit: cover;
+    width: 33%;
+    height: 200px;
+    cursor: zoom-in;
+}
+
+.gallery-link {
+    line-height: 0;
+}
+
+#pronoun-fries {
+    font-size: medium;
+    font-weight: normal;
+    margin-left: 10px;
+    color: gray;
+}
+
+.project-technology {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 10px;
+    border-radius: 100px;
+    background-color: rgb(228, 228, 228);
+}

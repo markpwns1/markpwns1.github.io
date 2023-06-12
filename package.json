@@ -1,0 +1,23 @@
+{
+  "name": "markpwns1.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compile.js",
+  "scripts": {
+    "compile": "node compile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markpwns1/markpwns1.github.io.git"
+  },
+  "author": "markpwns1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markpwns1/markpwns1.github.io/issues"
+  },
+  "homepage": "https://github.com/markpwns1/markpwns1.github.io#readme",
+  "dependencies": {
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

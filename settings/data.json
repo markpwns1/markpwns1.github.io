@@ -1,0 +1,232 @@
+{
+    "externalLinks": [
+        {
+            "label": "botmark.itch.io",
+            "url": "https://botmark.itch.io"
+        },
+        {
+            "label": "github.com/markpwns1",
+            "url": "https://github.com/markpwns1"
+        },
+        {
+            "label": "linkedin.com/in/mark-kaldas-ca",
+            "url": "https://www.linkedin.com/in/mark-kaldas-ca"
+        }
+    ],
+    "languages": [
+        "C#", "HTML", "CSS", "JS", "Lua", "Java", "C", "Python", "GLSL", "Haskell", "Rust", "C++", "SQL", "SASS", "OCaml", "F#", "Prolog", "VB.NET", "x86, MIPS, & 6502 Assembly", "Français"
+    ],
+    "tools": [
+        "Unity", ".NET Framework & Core", "Node", "React", "Express", "Wordpress", "Laravel", "MySQL", "MongoDB", "jQuery", "WebGL", "POSIX", "WinAPI", "Windows Forms", "MVC", "ECS", "Love2D", "SFML", "JUnit (and unit testing in general)", "Git"
+    ],
+    "gallery": [
+        "images/cairopunk0.png",
+        "images/naffta1.png",
+        "images/harpy0.png",
+        "images/space3.png",
+        "images/taxi2.png",
+        "images/herdingcats0.png",
+        "https://img.itch.zone/aW1hZ2UvMTA4MTY4OS82MjQ1NDE3LmpwZw==/original/0%2BCPWo.jpg",
+        "images/rts2.png",
+        "images/cairopunk2.png"
+    ],
+    "skills": [
+        "Desktop, Web, & Game Development",
+        "UI/UX Design & Implementation",
+        "RESTful API Design & Implementation",
+        "Graphics & Shader Programming",
+        "Procedural Generation & Technical Art",
+        "3D Modelling & Animation"
+    ],
+    "categories": [
+        {
+            "label": "Software",
+            "id": "software-projects",
+            "projects": [
+                {
+                    "label": "Booring",
+                    "id": "booring",
+                    "technologies": [ "HTML / CSS / JS", "Node", "Express", "jQuery", "Heroku" ],
+                    "link": "https://booring.herokuapp.com/?domain=danbooru&q=rating:g,landscape",
+                    "tallimages": true,
+                    "images": [
+                        "images/booring0.png",
+                        "images/booring1.png",
+                        "images/booring2.png"
+                    ],
+                    "description": [
+                        "To give some background, I'm an artist, so I like to collect reference images for my art, sometimes of specific things. Usually I would go to image boards and search there, but there are many different image boards with different content, and each of them have different tags to search and different capabilities. Many of their features are locked behind a paywall, and their frontends are absolutely abysmal on desktop, and have no support for mobile whatsoever.",
+                        "My solution was a mobile-optimised webapp to replace their frontend, that aggregates the results of the 3 websites together, shows you and autocompletes tags for each website, allows you to search with a uniform syntax, supports Discord embeds, and most importantly, circumvents all their paywalls.",
+                        "How I did it, was I made a frontend using HTML, CSS, JS, and jQuery (it needed to be lightweight for mobile devices) and then a system where you could swap out middleware for each website. The middleware would handle the API calls and other things per-website. Most of their APIs would only allow access for their own frontend, so I wrote a backend in JS using Node and Express to act as a proxy for the APIs, and then I hosted it on Heroku. The proxy would act like a Firefox browser connected to their front-end by mimicking their headers. They also did not allow hotlinking, so I wrote a proxy for that the same way.",
+                        "As for circumventing the paywall, how it works is that unless you paid, the website would only allow you to search 2 tags. So I wrote a system that would select the 2 least common tags in your search (which would be the most specific tags) and then search for them, and then filter the results by the other tags you searched for. This way, you could search for as many tags as you wanted, and it would only count as 2 tags.",
+                        "As for listing all the tags for each website in an autocomplete format, I had to reverse engineer the websites' frontends to find out how they were getting their tag lists. One website just has an autocomplete API, which was simple enough, and the others had a tag summary API endpoint which would give you a list of tags and their counts, and it was up to the frontend to cache them and filter them. So I wrote a system to do exactly that, for all 3 websites, including the one with an autocomplete API, so that I could have a uniform autocomplete system for all 3 websites.",
+                        "Booring is actually quite complex, and needless to say there are some details I left out of the explanation, like Discord embed support and Pixiv Ugoira file format support, but that's a high-level explanation of most of the most important systems."
+                    ]
+                },
+                {
+                    "label": "The Jammy Programming Language",
+                    "id": "jammy",
+                    "technologies": [ "Javascript", "Node", "Compilers" ],
+                    "srclink": "https://github.com/markpwns1/jammy",
+                    "tallimages": true,
+                    "images": [
+                        "images/jammy0.png"
+                    ],
+                    "description": [
+                        "As you might have been able to notice, game development is a rather large hobby of mine. Jammy is an original programming language written in NodeJS that transpiles to Lua, designed with speed of iteration as a priority. It's named Jammy because it's designed for writing Love2D games as fast as possible for game jams.",
+                        "The language is meant to streamline much of the boilerplate required when working with Lua and Love2D, and provides a batteries-included standard library, and also provides native support for object oriented programming and functional programming, which are both things that are quite cumbersome in Lua. It also includes things like adhoc type-checking, function overloading, a module system, and more.",
+                        "I'm going to keep this description a little short since there is an extremely in-depth README on the Github page, if you'd like to know about the specifics."
+                    ]
+                },
+                {
+                    "label": "Multiplayer Card Game Engine",
+                    "id": "card-game-engine",
+                    "technologies": [ "HTML / CSS / JS", "Networking (Peer-to-Peer)", "jQuery", "PeerJS", "HTML5 Canvas" ],
+                    "link": "https://markpwns1.github.io/card-game-online",
+                    "srclink": "https://github.com/markpwns1/card-game-online",
+                    "tallimages": true,
+                    "images": [
+                        "images/card0.png"
+                    ],
+                    "description": ["TODO: Write this"]
+                }
+            ]
+        },
+        {
+            "label": "Games",
+            "id": "game-projects",
+            "projects": [
+                {
+                    "label": "NAFFTA: SET THE STEPPES ALIGHT",
+                    "id": "naffta",
+                    "technologies": [ "Unity", "C#", "HLSL", "Procedural Generation", "Shaders", "Blender" ],
+                    "link": "https://botmark.itch.io/naffta",
+                    "images": [
+                        "https://img.itch.zone/aW1hZ2UvMTU2OTg1Ni85MTY5MTc5LmdpZg==/original/gGVTaJ.gif",
+                        "https://img.itch.zone/aW1hZ2UvMTU2OTg1Ni85MTY5MTI1LmdpZg==/original/hYBKy1.gif"
+                    ],
+                    "description": [
+                        "NAFFTA: SET THE STEPPES ALIGHT is a short 3D Unity game about riding on a horse and fighting a colossus with fire arrows and rockets on the vast Asian steppes.",
+                        "It was a one-man project, and I did everything from programming, to 3D modelling, to illustration. I was offered funds and a publishing deal by a publisher to turn this into a full game on  PC and Nintendo Switch, but I declined because I was still in school and because the funds weren't realistic for a game of the scope they wanted.",
+                        "This game features an infinite, procedurally generated world with a render distance of 3 kilometres, which is absurdly large, and required immense optimisation efforts. It was worth it to see those mountains in the distance, though!",
+                        "The infinite world is done using a chunk system and extremely low-poly terrain, hidden using artistic techniques so you won't notice how low-poly it is. The chunks are loaded in priority of proximity to the player and direction of movement, and unloaded when they are far enough away. The chunk loading is also multi-threaded and spread over multiple frames so as to be completely unnoticeable to the player. The height data itself is sampled from ridged multifractal noise.",
+                        "WebGL doesn't support multithreading, so I rewrote the chunk loading system to allow you to swap out different chunk-loading backends depending the platform. The WebGL version uses a coroutine-based system that loads chunks over multiple frames, as opposed to the PC version's multithreaded backend.",
+                        "The grass is stored as an array of points and re-used like in an object pool, saving memory. They are drawn with direct calls to OpenGL and use instancing to draw many of them at once, for maximum performance. The grass is also animated and drawn using custom shaders so that each instance is varied.",
+                        "The 3D voluetric clouds are also procedurally generated and animated. Rather than use raytracing, I opted to use sprite-stacking to create the illusion of 3D clouds. Essentially, I used 10 slices of a cloud and displayed them on 10 quads spaced out vertically to look 3D. This was much more performant than any other solution while looking almost exactly the same.",
+                        "The colossus you fight is entirely procedurally animated, and his legs use inverse kinematics to stay on the ground. When you kill him, he collapses onto the ground with ragdoll physics. The colossus AI is just a simple state machine.",
+                        "Feel free to try out the game for yourself! Read the Itch.io page if you get stuck on how to beat the colossus."
+                    ]
+                },
+                {
+                    "label": "Surreal Taxi",
+                    "id": "surreal-taxi",
+                    "technologies": [ "Unity", "C#", "HLSL", "Procedural Generation", "Shaders", "Blender" ],
+                    "link": "https://nashdashin.itch.io/surreal-taxi",
+                    "images": [
+                        "images/taxi0.png",
+                        "images/taxi1.png",
+                        "images/taxi2.png"
+                    ],
+                    "description": [
+                        "This is a tiny 3D Unity game made in 48 hours for Lame Jam 9, a small, monthly game jam. I worked in a team of 5, and I was in charge of terrain generation and art direction. Hopefully from the screenshots, you'll agree that I delivered! The game is a standard taxi game where you drive around and pick up passengers and drop them off at their destination. The twist, however, is that you are in a disorienting surreal hellscape, the passengers make no sense, and you can perform stunts for absolutely no in-game benefit (but everyone still does it anyway). The soundtrack was created by the most talented musician I know, who demanded we create a dynamic soundtrack with different instruments blending in and out depending on the circumstances, and it all comes together to make an extremely relaxing experience, one that tends to hypnotise you. You have to play it to really understand.",
+                        "Our process for game jams is as follows: we gather together on a call for the opening ceremony and once the theme is revealed, we create a collaborative Google doc and start writing down every word that comes to our mind. For example, the theme 'together' would probably have us write 'link, chain, partner, ...'. Sometimes these words will inspire sentences, and some of those sentences will transform into game mechanics, and some of those will in turn become full game pitches. We pick the most promising pitch based on both fun-ness and our time constraint and resources, preferring to be realistic about what we can accomplish in 48 hours.",
+                        "After that, we start assigning informal roles (it is a game jam after all, everyone does everything). I was put in charge of art direction and terrain generation. Before everyone got to work, we straightened out our idea and created an asset list for the artists and musicians to make, including a list of 3D models, textures, sound effects, etc. needed for the game, and until we got those, the programmers would have to use cube placeholders. Due to our talented team and disciplined planning phase, the game went off without a hitch, and we actually had so much extra time that we added the ability to perform stunts for no reason, which increased the fun factor by a lot.",
+                        "I highly encourage you to give it the game a try, and you'll see what I mean!"
+                    ]
+                },
+                {
+                    "label": "Untitled Space Game (TECH DEMO)",
+                    "technologies": [ "Unity", "C#", "HLSL", "Procedural Generation", "Shaders" ],
+                    "id": "space-game",
+                    "images": [
+                        "images/space3.png",
+                        "https://media.discordapp.net/attachments/758125475423584306/963967784570740736/Animation.gif",
+                        "images/space1.png",
+                        "images/space2.png"
+                    ],
+                    "description": [
+                        "Not as technically impressive as the others, but very pretty! This is a tech demo in Unity that I've decided to put on hold for now. It's a galaxy generator that generates an extremely large spiral galaxy and lets the player fly to any planet there.",
+                        "The galaxy is generated by distributing stars inside a six-pointed starfish shape, then warping the shape by rotating it more the further from the center it is, giving it a spiral appearance. Each star is given a temperature, luminosity, and diameter, which realistically determines its colour and brightness.",
+                        "As for rendering, each star is rendered as a single pixel on the screen using a special render mode, and the galaxy has a shader applied so that far-away stars will blur together and form a kind of mass of light, so that it actually looks like a galaxy from far away. In 'interstellar space' the player moves many times faster than the speed of light, so they can travel between stars, and press space to warp there once they're close enough.",
+                        "Each star has several planets whose properties are determined partially at random, and partially according to its distance from its star (planets with liquid water and life will only generate in the star's goldilocks zone, for example). The planets are rendered as spheres with procedurally generated surfaces. The planets' atmospheres are quite detailed and feature things like atmospheric scattering, clouds, etc. The clouds are procedurally generated and animated textures applied to a sphere, and the atmosphere is a raymarched sphere in a post-processing shader, which is very performant due to the game's low-resolution downscaled screen. The planets do not have moons unfortunately, and you can't land on them.",
+                        "Not shown in the screenshots is the game's menu, which shows you a diagram of the current solar system and planet, along with their statistics. I never bothered uploading this tech demo due to some outstanding bugs, but I can send the files upon request."
+                    ]
+                },
+                {
+                    "label": "CAIROPUNK",
+                    "id": "cairopunk",
+                    "technologies": [ "Unity", "C#", "HLSL", "Procedural Generation", "Shaders", "Blender" ],
+                    "images": [
+                        "images/cairopunk0.png",
+                        "images/cairopunk2.png",
+                        "https://media.discordapp.net/attachments/624785147140636672/1114337836762669056/image.png"
+                    ],
+                    "description": [
+                        "A current very early work-in-progress Unity game that I started early June 2023, you're currently seeing screenshots of the game as of June 10th. Cairopunk is (will be) a game in the far future set in a flooded, post-apocalyptic Middle East, where everyone lives on flying fortresses and all combat is performed by fighter jets. It will have an overworld map where you control your flying fortress and trade, manage resources, etc., while engaging in combat in a different scene.",
+                        "What I have so far is a reasonably advanced flight simulator relying solely on physics and no unrealistic tricks to keep flight stable--the flight is stable by itself. It takes into account things like angle of attack, air density at differing altitudes, the ground effect, pilot G-force tolerance, etc.",
+                        "The terrain engine is a step up from the one in Naffta, and uses similar chunk system, but with many more tricks to get it to support terrain up to hundreds of kilometres away in-engine (though the world itself is scaled down for gameplay purposes). The terrain data is sampled from a real-world heightmap of the Middle East region and then procedurally modified to add more detail, and then flooded. Among the tricks it uses are multithreaded, frame-distributed chunk loading, LODs, distant fog, and a retro art style such that seeing that mountains are a little pointy (as with super far LODs) wouldn't be out of place.",
+                        "As for the clouds, I've used similarly clever tricks. The clouds are a hybrid of raytraced and billboards. I chose this rather than completely 2D solutions like billboards or sprite-stacking, which I've used in other games, because those solutions only look good if you can control the angle that the player is viewing the clouds from. Being a flight game, the player may be at any angle to the clouds and can literally fly through them. So clouds are raytraced up to 800 metres from the camera, and then a horizontal billboard spanning the whole world is drawn at cloud height and rendered after 800m. This works out because the only way you'd be able to see them is from far above the clouds, so they still look good. In practice, this system looks just as good as raytrace-only clouds, and is much more performant.",
+                        "I take art direction very seriously, so the game (as with most of my games) is rendered at genuine low resolution, and upscaled without any filtering. In addition, the colours are restricted and a faux-dithering effect is applied, which is easier on the eyes than real dithering. The art direction extends beyond post-processing too, with intentionally low-poly terrain and models, and fake shadows via black textures on a quad hovering above the ground (as seen in the 3rd screenshot).",
+                        "That's all I have for now, so check back later for more updates!"
+                    ]
+                },
+                {
+                    "label": "Herding Cats",
+                    "id": "herding-cats",
+                    "technologies": [ "Unity", "C#", "HLSL", "WebGL", "Shaders" ],
+                    "link": "https://klungore.itch.io/herding-cats",
+                    "images": [
+                        "images/herdingcats0.png"
+                    ],
+                    "description": [
+                        "This is a 2D Unity game made for the \"Let's Jam Together\" game jam, hosted by the University of Alberta Games Den, in a team of 5 over 48 hours. The game is quite simple, you're a sheep dog who has to herd cats into a little clearing in the center of the screen, and the cats will not stay put!",
+                        "I wrote the player controller, the UI, some of the cat AI, and the pretty shaders for the grass (I also had to draw the grass). The grass sways gently from the wind (minor warping applied from a noise texture) and the grass obscures things inside it, which is accomplished by special shaders for the dogs and cats that sample the height of the grass from a pregenerated texture and obscure themselves accordingly. There were also some issues with platform differences, such as the grass shader swaying on a per-game-pixel basis in-editor and on Windows (correct behaviour) but a per-screen-pixel basis in the WebGL build, which I had to fix.",
+                        "It's available in-browser on itch.io, so go give it a try!"
+                    ]
+                },
+                {
+                    "label": "GOLDEN SKY: THE BATTLE FOR HEAVEN",
+                    "technologies": [ "Unity", "C#", "HLSL", "Procedural Generation", "Shaders", "Blender" ],
+                    "id": "golden-skies",
+                    "embeds": [
+                        "https://www.youtube-nocookie.com/embed/g8vqFZJKl30"
+                    ],
+                    "description": [
+                        "I'm a fan of the 'X: Y' video game naming scheme. Anyway, this is an unfinished project of mine that I worked on for about a week. It's a dogfighting game where you must beat wave after wave of enemies. The gameplay is actually very slick, and I'm kind of sad I never finished it, since it's a lot of fun to play. Needless to say, most of the assets are placeholders.",
+                        "The terrain engine featured in this game is a precursor to the one in Naffta, so go read the section on NAFFTA: SET THE STEPPES ALIGHT above for details. The clouds too, are a less sophisticated version of the ones in Naffta, since this game was made earlier.",
+                        "The AI is incredibly simple: enemy jets just put themselves on an intercept path with you and shoot, and enemy turrets just point towards you (with a bit of lead) and shoot. The 'bullets' are actually just an illusion that makes it look like they're moving, but in reality the gunfire is hitscan, which makes the AI much simpler.",
+                        "Besides that, there aren't really any impressive technical feats. But that gameplay video sure looks fun, doesn't it?"
+                    ]
+                },
+                {
+                    "label": "Rhythmic-Time Strategy",
+                    "id": "rts",
+                    "technologies": [ "Unity", "C#" ],
+                    "link": "https://nashdashin.itch.io/rhythmic-time-strategy",
+                    "images": [
+                        "https://img.itch.zone/aW1hZ2UvMTA4MTY4OS82MjQ1NDE3LmpwZw==/original/0%2BCPWo.jpg",
+                        "https://img.itch.zone/aW1hZ2UvMTA4MTY4OS82MjE3MDI5LmpwZw==/original/%2B2J%2Fsv.jpg"
+                    ],
+                    "description": [
+                        "A small 2D game made in Unity in 48 hours for the GMTK Game Jam 2021. Made in a team of 4. The game is a real-time strategy game where your units (and enemies) move to the beat. You play as robots who have to defend their base from the evil humans. Your units can only operate in range of pylons, which you can construct, and you can also construct miners to collect crystals to build more pylons and units, and fighters, to fight off the unreasonably hostile humans.",
+                        "I was in charge of pathfinding and unit and enemy behaviour. The pathfinding is a simple A* implementation, and the unit and enemy behaviour are just state machines, so nothing groundbreaking here. But it is a solid game! The camera shakes to the beat, which some people absolutely love, and some poeple absolutely despise. We wanted to add a toggle for it for those who didn't like it, but we unfortunately ran out of time.",
+                        "Go ahead and play it! It's available in-browser on itch.io."
+                    ]
+                },
+                {
+                    "label": "Many, Many Others",
+                    "technologies": [ "Networking", "Modding", "Unity", "SFML", "C++", "C#", "Lua", "Love2D", "Godot", "HTML5", "Java", "LibGDX" ],
+                    "id": "others",
+                    "images": [
+                        "images/harpy0.png",
+                        "images/harpy1.png",
+                        "images/rts2.png"
+                    ],
+                    "description": [
+                        "I've been making games for so long that it would be impossible to list them all here. Most of what I've shown on this portfolio is in Unity, but I've written games in plenty of other things like SFML, Love2D, Godot, etc. If you have some sort of game system, like networking or moddability for example, chances are I've written a game that does it! Please let me know if you have any questions, or if you're really curious, hop on a call with me and I can show them to you!"
+                    ]
+                }
+            ]
+        }
+    ]
+}

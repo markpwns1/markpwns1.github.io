@@ -6,81 +6,82 @@ html(lang="en")
         noscript: <style> .js-only { display: none } </style> 
         title Mark Kaldas
     body 
-        #thin-site-container
-            h1#site-title.center-inline Mark Kaldas
-                span#pronoun-fries.center-inline (He/Him)
-            p#external-links 
-                each l in externalLinks
-                    a.external-link(href=l.url, target="_blank")= l.label
-            p.center-inline Full-stack Developer & Game Developer<br>BSc. Computer Science, 3 years professional experience & many more of freelance and hobby experience.
-        #wide-site-container
-            #columns.skills-columns
-                .column3 
-                    h2.column-header Languages <br>
-                    each l in languages
-                        span.item= l
-                .column3.lr-border
-                    h2.column-header.center-inline Tools & Frameworks <br>
-                    div.inline.center-inline
-                        each t in tools
-                            span.item= t
-                .column3 
-                    h2.column-header(style="text-align: right") Skills
-                    ul(style="text-align: right")
-                        each s in skills
-                            li= s
-            #gallery-container
-                h2.center-inline.column-header Gallery
-                #gallery 
-                    each g in gallery
-                        a.gallery-link(href=g, target="_blank"): img.gallery-image(src=g)
-        #thin-site-container
-            h2.column-header.intro Hello! 
-            p.intro Welcome to my portfolio site. It's currently under construction, so it doesn't contain even a fraction of the experience I want to show off yet -- in the meantime, feel free to ask me whether I've worked with X technology. Chances are the answer is yes! I also have some more of my software <a href="github.com/markpwns1">on my Github</a>.<br>
-            p.intro.center-inline If you don't already have my email, then you can reach me at:<br>
-                a#link-show-email.js-only(href="javascript:void()", onclick="this.innerHTML = [ 'com', '.', 'yahoo', '@', 'kaldas', '_', 'mark' ].reverse().join('')") (show email)
-                noscript (Please enable Javascript to view the email address)
-            //- img.center(src="https://upload.wikimedia.org/wikipedia/commons/1/19/Under_construction_graphic.gif")
-            h2.column-header Table of Contents
-            ol
-                each c in categories
-                    li.toc-category
-                        a(href="#"+c.id)= c.label
-                        ol(type="a")
-                            each p in c.projects
-                                li: a(href="#"+p.id)= p.label
-        #wide-site-container
-            #project-list
-                each c in categories 
-                    h2.center-inline.column-header= c.label
-                    each p in c.projects
-                        details.project.left-border(open)
-                            summary
-                                a.project-title(id=p.id)= p.label
-                                if p.technologies
-                                    .project-technologies
-                                        each t in p.technologies
-                                            span.project-technology= t
-                            .project-body
-                                if p.embeds
-                                    .project-images
-                                        p Note: set Youtube videos to 720p or 1080p and enable fullscreen for best quality
-                                        each e in p.embeds
-                                            iframe.project-embed(src=e, frameborder="0", allowfullscreen)
-                                if p.images
-                                    .project-images
-                                        each i in p.images
-                                            if p.tallimages
-                                                a(href=i, target="_blank"): img.project-image.tall(src=i)
-                                            else
-                                                a(href=i, target="_blank"): img.project-image(src=i)
-                                if p.link
-                                    a.project-link(href=p.link, target="_blank") (Visit in new tab)
-                                if p.srclink
-                                    a.project-link(href=p.srclink, target="_blank") (View source in new tab)
-                                if p.link || p.srclink
-                                    br
-                                each d in p.description
-                                    p.project-description= d
+        #site-container
+            #thin-site-container
+                h1#site-title.center-inline Mark Kaldas
+                    span#pronoun-fries.center-inline (He/Him)
+                p#external-links 
+                    each l in externalLinks
+                        a.external-link(href=l.url, target="_blank")= l.label
+                p.center-inline Full-stack Developer & Game Developer<br>BSc. Computer Science, 3 years professional experience & many more of freelance and hobby experience.
+            #wide-site-container
+                #columns.skills-columns
+                    .column3 
+                        h2.column-header Languages <br>
+                        each l in languages
+                            span.item= l
+                    .column3.lr-border
+                        h2.column-header.center-inline Tools & Frameworks <br>
+                        div.inline.center-inline
+                            each t in tools
+                                span.item= t
+                    .column3 
+                        h2.column-header(style="text-align: right") Skills
+                        ul(style="text-align: right")
+                            each s in skills
+                                li= s
+                #gallery-container
+                    h2.center-inline.column-header Gallery
+                    #gallery 
+                        each g in gallery
+                            a.gallery-link(href=g, target="_blank"): img.gallery-image(src=g)
+            #thin-site-container
+                h2.column-header.intro Hello! 
+                p.intro Welcome to my portfolio site. It's currently under construction, so it doesn't contain even a fraction of the experience I want to show off yet -- in the meantime, feel free to ask me whether I've worked with X technology. Chances are the answer is yes! I also have some more of my software <a href="github.com/markpwns1">on my Github</a>.<br>
+                p.intro.center-inline If you don't already have my email, then you can reach me at:<br>
+                    a#link-show-email.js-only(href="javascript:void()", onclick="this.innerHTML = [ 'com', '.', 'yahoo', '@', 'kaldas', '_', 'mark' ].reverse().join('')") (show email)
+                    noscript (Please enable Javascript to view the email address)
+                //- img.center(src="https://upload.wikimedia.org/wikipedia/commons/1/19/Under_construction_graphic.gif")
+                h2.column-header Table of Contents
+                ol
+                    each c in categories
+                        li.toc-category
+                            a(href="#"+c.id)= c.label
+                            ol(type="a")
+                                each p in c.projects
+                                    li: a(href="#"+p.id)= p.label
+            #wide-site-container
+                #project-list
+                    each c in categories 
+                        h2.center-inline.column-header= c.label
+                        each p in c.projects
+                            details.project.left-border(open)
+                                summary
+                                    a.project-title(id=p.id)= p.label
+                                    if p.technologies
+                                        .project-technologies
+                                            each t in p.technologies
+                                                span.project-technology= t
+                                .project-body
+                                    if p.embeds
+                                        .project-images
+                                            p Note: set Youtube videos to 720p or 1080p and enable fullscreen for best quality
+                                            each e in p.embeds
+                                                iframe.project-embed(src=e, frameborder="0", allowfullscreen)
+                                    if p.images
+                                        .project-images
+                                            each i in p.images
+                                                if p.tallimages
+                                                    a(href=i, target="_blank"): img.project-image.tall(src=i)
+                                                else
+                                                    a(href=i, target="_blank"): img.project-image(src=i)
+                                    if p.link
+                                        a.project-link(href=p.link, target="_blank") (Visit in new tab)
+                                    if p.srclink
+                                        a.project-link(href=p.srclink, target="_blank") (View source in new tab)
+                                    if p.link || p.srclink
+                                        br
+                                    each d in p.description
+                                        p.project-description= d
 
 

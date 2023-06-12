@@ -175,8 +175,11 @@ ul, ol {
 }
 
 #project-list {
-    margin-top: 30px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.project-category {
+    margin-top: 80px;
 }
 
 #gallery-container {

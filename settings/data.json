@@ -44,6 +44,21 @@
             "id": "software-projects",
             "projects": [
                 {
+                    "label": "The LIGMAScript Programming Language",
+                    "id": "ligma",
+                    "technologies": [ "Javascript", "Lua", "TypeScript", "Node", "Compiler Theory", "Language Server Protocol", "VSCode API" ],
+                    "link": "https://github.com/markpwns1/ligmascript",
+                    "tallimages": true,
+                    "images": [
+                        "images/ligma0.png"
+                    ],
+                    "description": [
+                        "An ongoing project of mine, LIGMAScript is highly sophisticated optimising compiler for an original programming language that compiles to Lua. LIGMA stands for Lua-Interoperable General Machine Abstraction. The compiler is implemented in Javascript, running on Node, but I plan to port it or distribute it on a lighter Javascript engine. The language itself is quite stable, I'm just currently working on a standard library and a fleshed-out command-line interface for the compiler.",
+                        "LIGMAScript fills the niche of a highly ergonomic, dynamically typed functional language that targets Lua. Its notable features are a lightweight file-based module system, extremely accurate error messages, runtime Lua errors that point to lines in the original source code, and an extremely powerful pattern matching system, more powerful than Haskell's. In addition, I've written and maintained a VSCode extension and Language Server alongside the compiler, which provides syntax highlighting, autocompletion, error reporting, and other features.",
+                        "Among the optimisations it employs are pattern branch optimisation and dead code elimination. Feel free to visit the repo, where I have extremely detailed documentation on the language and its features, which I think you'll find quite impressive (particularly pattern matching)."
+                    ]
+                },
+                {
                     "label": "Booring",
                     "id": "booring",
                     "technologies": [ "HTML / CSS / JS", "Node", "Express", "jQuery", "Heroku" ],
@@ -66,8 +81,8 @@
                 {
                     "label": "The Jammy Programming Language",
                     "id": "jammy",
-                    "technologies": [ "Javascript", "Node", "Compilers" ],
-                    "srclink": "https://github.com/markpwns1/jammy",
+                    "technologies": [ "Javascript", "Lua", "Node", "Compiler Theory" ],
+                    "link": "https://github.com/markpwns1/jammy",
                     "tallimages": true,
                     "images": [
                         "images/jammy0.png"
@@ -75,7 +90,8 @@
                     "description": [
                         "As you might have been able to notice, game development is a rather large hobby of mine. Jammy is an original programming language written in NodeJS that transpiles to Lua, designed with speed of iteration as a priority. It's named Jammy because it's designed for writing Love2D games as fast as possible for game jams.",
                         "The language is meant to streamline much of the boilerplate required when working with Lua and Love2D, and provides a batteries-included standard library, and also provides native support for object oriented programming and functional programming, which are both things that are quite cumbersome in Lua. It also includes things like ad-hoc type-checking, function overloading, a module system, and more.",
-                        "There is an extremely in-depth readme on the Github page, if you'd like to know about the specifics."
+                        "There is an extremely in-depth readme on the Github page, if you'd like to know about the specifics.",
+                        "While Jammy has not been rendered obsolete by LIGMAScript (since they fill different roles), I still consider LIGMAScript the far superior language."
                     ]
                 },
                 {
@@ -88,7 +104,22 @@
                     "images": [
                         "images/card0.png"
                     ],
-                    "description": ["TODO: Write this"]
+                    "description": [
+                        "This particular project is the result of a contract job with a university professor who now works at the University of Calgary. They wanted a multiplayer card game engine for some kind of research project, and had some very particular requirements for it. Namely that it be easily extensible, have minimal dependences, have a simple room system, and show the location of the other player's mouse cursor, among other things.",
+                        "So I wrote this in PeerJS and jQuery (the minimal dependences I mentioned) and used the HTML5 Canvas API to render the game. Since the game parts were written from scratch, I had to implement core game implementation details like a framerate-independent game loop, separate logic and rendering loops, an input and event system, and a networking API as an abstraction over the lower-level peer-to-peer communication."
+                    ]
+                },
+                {
+                    "label": "Many, Many Others",
+                    "id": "others-software",
+                    "technologies": [ "Python", "Java", "Haskell", "OCaml", "Coq", "C", "C++", "Rust", "Others" ],
+                    "link": "https://github.com/markpwns1",
+                    "images": [
+                        "images/vs0.png"
+                    ],
+                    "description": [
+                        "As this portfolio site is a work in progress, I haven't quite added all the things I wanted to show off yet, especially non-game software (which I have quite a lot of). As such, feel free to check out my Github where a lot of them are posted. They usually have decent READMEs explaining what they are and how they work. Thanks for reading!"
+                    ]
                 }
             ]
         },

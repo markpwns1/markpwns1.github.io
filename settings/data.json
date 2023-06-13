@@ -75,7 +75,7 @@
                     "description": [
                         "As you might have been able to notice, game development is a rather large hobby of mine. Jammy is an original programming language written in NodeJS that transpiles to Lua, designed with speed of iteration as a priority. It's named Jammy because it's designed for writing Love2D games as fast as possible for game jams.",
                         "The language is meant to streamline much of the boilerplate required when working with Lua and Love2D, and provides a batteries-included standard library, and also provides native support for object oriented programming and functional programming, which are both things that are quite cumbersome in Lua. It also includes things like ad-hoc type-checking, function overloading, a module system, and more.",
-                        "I'm going to keep this description a little short since there is an extremely in-depth README on the Github page, if you'd like to know about the specifics."
+                        "There is an extremely in-depth readme on the Github page, if you'd like to know about the specifics."
                     ]
                 },
                 {

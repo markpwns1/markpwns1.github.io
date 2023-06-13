@@ -20,7 +20,7 @@ for(const record of toCompile) {
             basedir: srcDir
         });
     
-        const html = compiled(data);
+        const html = compiled({ ...data, ...record.options });
     
         fs.writeFile(record.to, html, (err) => {
             if(err) console.log(record.from + " -> " + record.to + " : failed to write")   

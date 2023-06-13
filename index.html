@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
     <noscript><style> .js-only { display: none } </style> </noscript>
     <title>Mark Kaldas</title>
   </head>
@@ -45,14 +46,14 @@
       <div id="thin-site-container">
         <h2 class="column-header intro">Hello! </h2>
         <p class="intro">Welcome to my portfolio site. It's currently under construction, so it doesn't contain even a fraction of the experience I want to show off yet -- in the meantime, feel free to ask me whether I've worked with X technology. Chances are the answer is yes! I also have some more of my software <a href="https://github.com/markpwns1">on my Github</a>.<br></p>
-        <p class="intro center-inline">If you don't already have my email, then you can reach me at:<br><a class="js-only" id="link-show-email" href="javascript:void()" onclick="this.innerHTML = [ 'com', '.', 'yahoo', '@', 'kaldas', '_', 'mark' ].reverse().join('')">(show email)</a>
+        <p class="intro center-inline">If you don't already have my email, then you can reach me at:<br><a class="js-only" id="link-show-email">(show email)</a>
           <noscript>(Please enable Javascript to view the email address)</noscript>
         </p>
         <h2 class="column-header">Table of Contents</h2>
         <ol>
           <li class="toc-category"><a href="#software-projects">Software</a>
             <ol type="a">
-              <li><a href="#ligma">The LIGMAScript Programming Language</a></li>
+              <li><a href="#ligmascript">The LIGMAScript Programming Language</a></li>
               <li><a href="#booring">Booring</a></li>
               <li><a href="#jammy">The Jammy Programming Language</a></li>
               <li><a href="#card-game-engine">Multiplayer Card Game Engine</a></li>
@@ -77,8 +78,8 @@
         <div id="project-list">
           <div class="project-category">
             <h2 class="center-inline column-header">Software</h2>
-            <details class="project left-border">
-              <summary><a class="project-title" id="ligma">The LIGMAScript Programming Language</a>
+            <details class="project left-border" id="details-ligmascript">
+              <summary><a class="project-title" id="ligmascript">The LIGMAScript Programming Language</a>
                 <div class="project-technologies"><span class="project-technology">Javascript</span><span class="project-technology">Lua</span><span class="project-technology">TypeScript</span><span class="project-technology">Node</span><span class="project-technology">Compiler Theory</span><span class="project-technology">Language Server Protocol</span><span class="project-technology">VSCode API</span>
                 </div>
               </summary>
@@ -90,7 +91,7 @@
                 <p class="project-description">Among the optimisations it employs are pattern branch optimisation and dead code elimination. Feel free to visit the repo, where I have extremely detailed documentation on the language and its features, which I think you'll find quite impressive (particularly pattern matching).</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-booring">
               <summary><a class="project-title" id="booring">Booring</a>
                 <div class="project-technologies"><span class="project-technology">HTML / CSS / JS</span><span class="project-technology">Node</span><span class="project-technology">Express</span><span class="project-technology">jQuery</span><span class="project-technology">Heroku</span>
                 </div>
@@ -106,7 +107,7 @@
                 <p class="project-description">Booring is actually quite complex, and needless to say there are some details I left out of the explanation, like Discord embed support and Pixiv Ugoira file format support, but that's a high-level explanation of most of the most important systems.</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-jammy">
               <summary><a class="project-title" id="jammy">The Jammy Programming Language</a>
                 <div class="project-technologies"><span class="project-technology">Javascript</span><span class="project-technology">Lua</span><span class="project-technology">Node</span><span class="project-technology">Compiler Theory</span>
                 </div>
@@ -120,7 +121,7 @@
                 <p class="project-description">While Jammy has not been rendered obsolete by LIGMAScript (since they fill different roles), I still consider LIGMAScript the far superior language.</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-card-game-engine">
               <summary><a class="project-title" id="card-game-engine">Multiplayer Card Game Engine</a>
                 <div class="project-technologies"><span class="project-technology">HTML / CSS / JS</span><span class="project-technology">Networking (Peer-to-Peer)</span><span class="project-technology">jQuery</span><span class="project-technology">PeerJS</span><span class="project-technology">HTML5 Canvas</span>
                 </div>
@@ -132,7 +133,7 @@
                 <p class="project-description">So I wrote this in PeerJS and jQuery (the minimal dependences I mentioned) and used the HTML5 Canvas API to render the game. Since the game parts were written from scratch, I had to implement core game implementation details like a framerate-independent game loop, separate logic and rendering loops, an input and event system, and a networking API as an abstraction over the lower-level peer-to-peer communication.</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-others-software">
               <summary><a class="project-title" id="others-software">Many, Many Others</a>
                 <div class="project-technologies"><span class="project-technology">Python</span><span class="project-technology">Java</span><span class="project-technology">Haskell</span><span class="project-technology">OCaml</span><span class="project-technology">Coq</span><span class="project-technology">C</span><span class="project-technology">C++</span><span class="project-technology">Rust</span><span class="project-technology">Others</span>
                 </div>
@@ -146,7 +147,7 @@
           </div>
           <div class="project-category">
             <h2 class="center-inline column-header">Games</h2>
-            <details class="project left-border">
+            <details class="project left-border" id="details-naffta">
               <summary><a class="project-title" id="naffta">NAFFTA: SET THE STEPPES ALIGHT</a>
                 <div class="project-technologies"><span class="project-technology">Unity</span><span class="project-technology">C#</span><span class="project-technology">HLSL</span><span class="project-technology">Procedural Generation</span><span class="project-technology">Shaders</span><span class="project-technology">Blender</span>
                 </div>
@@ -165,7 +166,7 @@
                 <p class="project-description">Feel free to try out the game for yourself! Read the Itch.io page if you get stuck on how to beat the colossus.</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-surreal-taxi">
               <summary><a class="project-title" id="surreal-taxi">Surreal Taxi</a>
                 <div class="project-technologies"><span class="project-technology">Unity</span><span class="project-technology">C#</span><span class="project-technology">HLSL</span><span class="project-technology">Procedural Generation</span><span class="project-technology">Shaders</span><span class="project-technology">Blender</span>
                 </div>
@@ -179,7 +180,7 @@
                 <p class="project-description">I highly encourage you to give it the game a try, and you'll see what I mean!</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-space-game">
               <summary><a class="project-title" id="space-game">Untitled Space Game (TECH DEMO)</a>
                 <div class="project-technologies"><span class="project-technology">Unity</span><span class="project-technology">C#</span><span class="project-technology">HLSL</span><span class="project-technology">Procedural Generation</span><span class="project-technology">Shaders</span>
                 </div>
@@ -194,7 +195,7 @@
                 <p class="project-description">Not shown in the screenshots is the game's menu, which shows you a diagram of the current solar system and planet, along with their statistics. I never bothered uploading this tech demo due to some outstanding bugs, but I can send the files upon request.</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-cairopunk">
               <summary><a class="project-title" id="cairopunk">CAIROPUNK</a>
                 <div class="project-technologies"><span class="project-technology">Unity</span><span class="project-technology">C#</span><span class="project-technology">HLSL</span><span class="project-technology">Procedural Generation</span><span class="project-technology">Shaders</span><span class="project-technology">Blender</span>
                 </div>
@@ -210,7 +211,7 @@
                 <p class="project-description">That's all I have for now, so check back later for more updates!</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-herding-cats">
               <summary><a class="project-title" id="herding-cats">Herding Cats</a>
                 <div class="project-technologies"><span class="project-technology">Unity</span><span class="project-technology">C#</span><span class="project-technology">HLSL</span><span class="project-technology">WebGL</span><span class="project-technology">Shaders</span>
                 </div>
@@ -223,7 +224,7 @@
                 <p class="project-description">It's available in-browser on itch.io, so go give it a try!</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-golden-skies">
               <summary><a class="project-title" id="golden-skies">GOLDEN SKY: THE BATTLE FOR HEAVEN</a>
                 <div class="project-technologies"><span class="project-technology">Unity</span><span class="project-technology">C#</span><span class="project-technology">HLSL</span><span class="project-technology">Procedural Generation</span><span class="project-technology">Shaders</span><span class="project-technology">Blender</span>
                 </div>
@@ -239,7 +240,7 @@
                 <p class="project-description">Besides that, there aren't really any impressive technical feats. But that gameplay video sure looks fun, doesn't it?</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-rts">
               <summary><a class="project-title" id="rts">Rhythmic-Time Strategy</a>
                 <div class="project-technologies"><span class="project-technology">Unity</span><span class="project-technology">C#</span>
                 </div>
@@ -252,7 +253,7 @@
                 <p class="project-description">Go ahead and play it! It's available in-browser on itch.io.</p>
               </div>
             </details>
-            <details class="project left-border">
+            <details class="project left-border" id="details-others">
               <summary><a class="project-title" id="others">Many, Many Others</a>
                 <div class="project-technologies"><span class="project-technology">Networking</span><span class="project-technology">Modding</span><span class="project-technology">Unity</span><span class="project-technology">SFML</span><span class="project-technology">C++</span><span class="project-technology">C#</span><span class="project-technology">Lua</span><span class="project-technology">Love2D</span><span class="project-technology">Godot</span><span class="project-technology">HTML5</span><span class="project-technology">Java</span><span class="project-technology">LibGDX</span>
                 </div>

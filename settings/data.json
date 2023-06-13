@@ -45,7 +45,7 @@
             "projects": [
                 {
                     "label": "The LIGMAScript Programming Language",
-                    "id": "ligma",
+                    "id": "ligmascript",
                     "technologies": [ "Javascript", "Lua", "TypeScript", "Node", "Compiler Theory", "Language Server Protocol", "VSCode API" ],
                     "link": "https://github.com/markpwns1/ligmascript",
                     "tallimages": true,

@@ -224,3 +224,8 @@ ul, ol {
     border-radius: 100px;
     background-color: rgb(117, 117, 117);
 }
+
+#link-show-email {
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -3,6 +3,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         link(rel="stylesheet" href="css/style.css")
+        script(src="js/index.js")
         noscript: <style> .js-only { display: none } </style> 
         title Mark Kaldas
     body 
@@ -39,7 +40,7 @@ html(lang="en")
                 h2.column-header.intro Hello! 
                 p.intro Welcome to my portfolio site. It's currently under construction, so it doesn't contain even a fraction of the experience I want to show off yet -- in the meantime, feel free to ask me whether I've worked with X technology. Chances are the answer is yes! I also have some more of my software <a href="https://github.com/markpwns1">on my Github</a>.<br>
                 p.intro.center-inline If you don't already have my email, then you can reach me at:<br>
-                    a#link-show-email.js-only(href="javascript:void()", onclick="this.innerHTML = [ 'com', '.', 'yahoo', '@', 'kaldas', '_', 'mark' ].reverse().join('')") (show email)
+                    a#link-show-email.js-only (show email)
                     noscript (Please enable Javascript to view the email address)
                 //- img.center(src="https://upload.wikimedia.org/wikipedia/commons/1/19/Under_construction_graphic.gif")
                 h2.column-header Table of Contents
@@ -56,7 +57,7 @@ html(lang="en")
                         .project-category
                             h2.center-inline.column-header= c.label
                             each p in c.projects
-                                details.project.left-border
+                                details.project.left-border(id=("details-" + p.id))
                                     summary
                                         a.project-title(id=p.id)= p.label
                                         if p.technologies

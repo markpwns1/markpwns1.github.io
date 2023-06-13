@@ -50,7 +50,7 @@ html(lang="en")
                             a(href="#"+c.id)= c.label
                             ol(type="a")
                                 each p in c.projects
-                                    li: a(href="#"+p.id)= p.label
+                                    li: a.toc-link(href="#"+p.id,data-id=p.id)= p.label
             #wide-site-container
                 #project-list
                     each c in categories 

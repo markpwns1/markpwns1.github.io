@@ -2,12 +2,9 @@
 
 function openProject(id) {
     const details = document.getElementById("details-" + id);
-    if(details) details.open = true;
-}
-
-function onHashChange() {
-    if (window.location.hash) {
-        openProject(window.location.hash.substring(1));
+    if(details) {
+        details.open = true;
+        details.scrollIntoView();
     }
 }
 
@@ -18,7 +15,15 @@ window.onload = () => {
         this.innerHTML = [ 'com', '.', 'yahoo', '@', 'kaldas', '_', 'mark' ].reverse().join('')
     });
 
-    window.onhashchange = onHashChange;
+    const tocLinks = document.getElementsByClassName("toc-link");
+    for(const link of tocLinks) {
+        link.addEventListener("click", function () {
+            const id = this.getAttribute("data-id");
+            openProject(id);
+        });
+    }
 
-    onHashChange();
+    if (window.location.hash) {
+        openProject(window.location.hash.substring(1));
+    }
 }

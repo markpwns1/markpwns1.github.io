@@ -17,7 +17,7 @@
         "C#", "HTML", "CSS", "JS", "Lua", "Java", "C", "Python", "GLSL", "Haskell", "Rust", "C++", "SQL", "SASS", "OCaml", "F#", "Prolog", "VB.NET", "x86, MIPS, & 6502 Assembly", "Français"
     ],
     "tools": [
-        "Unity", ".NET Framework & Core", "Node", "React", "Express", "Wordpress", "Laravel", "MySQL", "MongoDB", "jQuery", "WebGL", "POSIX", "WinAPI", "Windows Forms", "MVC", "ECS", "Love2D", "SFML", "JUnit (and unit testing in general)", "Git"
+        "Unity", ".NET Framework & Core", "Node", "React", "Express", "Wordpress", "Laravel", "MySQL", "MongoDB", "jQuery", "WebGL", "POSIX", "WinAPI", "Windows Forms", "MVC", "ECS", "Love2D", "SFML", "Git", "JUnit (and unit testing in general)"
     ],
     "gallery": [
         "images/cairopunk0.png",

@@ -2,6 +2,7 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet" href="css/style.css")
         script(src="js/index.js")
         noscript: <style> .js-only { display: none } </style> 
@@ -29,7 +30,7 @@ html(lang="en")
                                 span.item= t
                     .column3 
                         h2.column-header.center-inline Skills
-                        ul.inline.center-inline
+                        ul.skills.center-inline
                             each s in skills
                                 li.skill= s
                 #gallery-container

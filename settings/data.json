@@ -130,7 +130,7 @@
                 {
                     "label": "NAFFTA: SET THE STEPPES ALIGHT",
                     "id": "naffta",
-                    "technologies": [ "Unity", "C#", "HLSL", "Procedural Generation", "Shaders", "Blender" ],
+                    "technologies": [ "Unity", "C#", "HLSL", "Multithreading", "Procedural Generation", "Shaders", "Blender" ],
                     "link": "https://botmark.itch.io/naffta",
                     "images": [
                         "https://img.itch.zone/aW1hZ2UvMTU2OTg1Ni85MTY5MTc5LmdpZg==/original/gGVTaJ.gif",
@@ -186,7 +186,7 @@
                 {
                     "label": "CAIROPUNK",
                     "id": "cairopunk",
-                    "technologies": [ "Unity", "C#", "HLSL", "Procedural Generation", "Shaders", "Blender" ],
+                    "technologies": [ "Unity", "C#", "HLSL", "Multithreading", "Procedural Generation", "Shaders", "Blender" ],
                     "images": [
                         "images/cairopunk0.png",
                         "images/cairopunk2.png",

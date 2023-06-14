@@ -18,19 +18,20 @@ html(lang="en")
             #wide-site-container
                 #columns.skills-columns
                     .column3 
-                        h2.column-header Languages <br>
-                        each l in languages
-                            span.item= l
-                    .column3.lr-border
+                        h2.column-header.center-inline Languages <br>
+                        div.inline.center-inline
+                            each l in languages
+                                span.item= l
+                    .column3
                         h2.column-header.center-inline Tools & Frameworks <br>
                         div.inline.center-inline
                             each t in tools
                                 span.item= t
                     .column3 
-                        h2.column-header(style="text-align: right") Skills
-                        ul(style="text-align: right")
+                        h2.column-header.center-inline Skills
+                        ul.inline.center-inline
                             each s in skills
-                                li= s
+                                li.skill= s
                 #gallery-container
                     h2.center-inline.column-header Gallery
                     #gallery 
@@ -57,7 +58,7 @@ html(lang="en")
                         .project-category
                             h2.center-inline.column-header= c.label
                             each p in c.projects
-                                details.project.left-border(id=("details-" + p.id))
+                                details.project(id=("details-" + p.id))
                                     summary
                                         a.project-title(id=p.id)= p.label
                                         if p.technologies

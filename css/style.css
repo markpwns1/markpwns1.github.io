@@ -203,6 +203,7 @@ ul, ol {
     text-align: center;
     margin: 20px auto;
     padding: 0;
+    line-height: 0;
     overflow: hidden;
     /* border-radius: 20px; */
 }

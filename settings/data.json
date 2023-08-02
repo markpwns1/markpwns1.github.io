@@ -14,7 +14,7 @@
         }
     ],
     "languages": [
-        "C#", "HTML", "CSS", "JS", "Lua", "Java", "C", "Python", "GLSL", "Haskell", "Rust", "C++", "SQL", "SASS", "OCaml", "F#", "Prolog", "VB.NET", "x86, MIPS, & 6502 Assembly", "Français"
+        "C#", "HTML", "CSS", "JS", "Lua", "Java", "C", "Python", "GLSL", "Ruby", "Haskell", "Rust", "C++", "SQL", "SASS", "OCaml", "F#", "Prolog", "VB.NET", "x86, MIPS, & 6502 Assembly", "Français"
     ],
     "tools": [
         "Unity", ".NET Framework & Core", "Node", "React", "Express", "Wordpress", "Laravel", "MySQL", "MongoDB", "jQuery", "WebGL", "POSIX", "WinAPI", "Windows Forms", "MVC", "ECS", "Love2D", "SFML", "Git", "JUnit (and unit testing in general)", "Jira"
@@ -103,8 +103,8 @@
                         "images/portfolio0.png"
                     ],
                     "description": [
-                        "This would be the website you are currently on. I wrote it in PugJS, which is a templating language for Node, regular old CSS, and (almost) no JavaScript. It was meant to be as lightweight as possible, meaning the website it generates is almost completely a static webpage. In all my projects, I try to be as accomodating as possible to browsers with Javascript disabled, because I myself have the NoScript extension on Firefox, so people like me are always in my thoughts.",
-                        "The content on the website is contained in a JSON file, which is then read by the Node server and passed to the Pug template, which then generates the HTML. This means that I can easily add new projects to the website without having to touch the HTML. This site also follows the principles of responsive web design. Go ahead! Resize the window!",
+                        "This would be the website you are currently on. I wrote it in PugJS, which is a templating language for Node, regular old CSS, and (almost) no JavaScript. It was meant to be as lightweight as possible, meaning the website it generates is almost completely a static webpage. In all my projects, I try to be as accomodating as possible to browsers with Javascript disabled, because I myself have the NoScript extension on Firefox.",
+                        "The content on the website is contained in a JSON file, which is then read by the Node server and passed to the Pug template, which then generates the HTML. This means that I can easily add new projects to the website without having to touch the HTML. This site also follows the principles of responsive web design. Go ahead, resize the window!",
                         "My web design philosophy is to make things as clean and lightweight as possible, and I believe this site is a great example of what you can expect from me in that regard."
                     ]
                 },

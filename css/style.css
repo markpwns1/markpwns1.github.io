@@ -240,7 +240,9 @@ ul, ol {
     width: 33%;
     height: 200px;
     overflow: hidden;
-    margin: auto;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
 #pronoun-fries {
